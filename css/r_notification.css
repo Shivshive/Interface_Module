@@ -1,0 +1,11 @@
+#notification_r{
+
+    font: 13px arial, serif;
+    color:red;
+    display: none;
+    font-family: cursive;
+}
+
+#required_fields{
+        padding-top: 15px;
+}

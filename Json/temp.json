@@ -1,0 +1,14 @@
+[
+    {
+        "testcasename_1": "Home",
+        "browser": [
+            "chrome"
+        ]
+    },
+    {
+        "testcasename_2": "Home",
+        "browser": [
+            "firefox"
+        ]
+    }
+]

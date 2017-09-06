@@ -1,0 +1,31 @@
+.card-body img{
+
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.test{
+    width: 18.5em;
+    margin: 10px;
+   
+}
+.card-footer btn i{
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.delete_btn , .run_btn{
+    cursor: pointer;
+    margin: 3px;
+}
+
+.tid{
+    display: none;
+}

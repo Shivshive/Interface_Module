@@ -1,0 +1,33 @@
+.view {
+    margin: 0px;
+    border: none;
+    height: 172px;
+    width: 301px;
+}
+
+.main {
+    padding: 0px;
+    height: 168px;
+}
+
+.card-block {
+
+    margin: 20px;
+}
+
+.play-btn {
+    position: relative;
+    top: 5px;
+    transition: color .2s ease, background-color 1s ease;
+}
+
+.play-btn:hover {
+    border-color: dodgerblue;
+    color: dodgerblue;
+    box-shadow: 3px -4px 43px dodgerblue, -2px 4px 42px dodgerblue;
+}
+.card{
+    margin:20px; 
+    width: 18.9rem; 
+    box-shadow: 4px 3px 25px lightgrey, -3px 4px 36px lightgrey;
+}

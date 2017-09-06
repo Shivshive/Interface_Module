@@ -1,0 +1,60 @@
+
+th{
+    font-size: 14px;
+    text-align: center;
+}
+tr td {
+
+    font-size: 13px;
+    text-align: center;
+}
+table{
+    display: none;
+    position: absolute;
+}
+
+.table{
+
+ width: 900px;
+}
+/* 
+tr td{
+   width:  200px;
+} */
+
+#testname{
+
+    width: 300px
+}
+
+#browser_header{
+
+    width: 50px;
+}
+
+#options{
+    width: 150px;
+    
+}
+
+td{
+    font-family: cursive;
+}
+
+i{
+    margin-right:10px;
+}
+
+.inactive {
+    filter:grayscale(100%);
+    cursor: pointer;	
+    height: 15px;
+    width: 15px;	
+}
+
+.active{
+    filter:grayscale(0%);
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}

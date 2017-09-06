@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--jquery cdn-->
+    <Script src="Javascript/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="Javascript_2/jquery_full.js"></script>
+
+    <!--custom scripts-->
+    <script src="Javascript_2/dropdown.js"></script>
+    <script src="Javascript_2/events.js"></script>
+    <script src="Javascript_2/functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!--custom links-->
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <link rel="stylesheet" href="css_2/checkbox.css" />
+    <link rel="stylesheet" href="css_2/dropdown.css">
+    <link rel="stylesheet" href="css_2/warning.css" />
+    <link rel="stylesheet" href="css_2/card.css" />
+
+
+    <!--bootstrap cards-->
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script>
+        var tests_List = [];
+    </script>
+
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="http://fancy-tshirts.com/wp-content/uploads/2016/08/Green-Lion-Save-the-nature-T-shirt-Design-by-Teehunter.jpg" alt="" height="50" width="50"> Gravity 2.0</a>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="nav-content">
+            <button id="addtest" type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#largeShoes"><i class="fa fa-plus" aria-hidden="true"></i> Add Test</button>
+            <button id="runsuite" type="button" class="btn btn-outline-success"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Run</button>
+        </div>
+    </nav>
+
+
+    <!--heading container-->
+    <div class="container">
+        <h2>Gravity 2.0</h2>
+        <p>Platform for automated testing.</p>
+    </div>
+
+
+    <!--Bootstrap-popup-->
+    <!-- The modal -->
+    <div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--header-->
+                <div class="modal-header justify-content-center">
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                    <h4 class="modal-title" id="modalLabelLarge">Add Test</h4>
+                </div>
+
+                <!--body-->
+                <div class="modal-body">
+                    <div class="container">
+                        <div id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                    <h5 class="mb-0 header_select">
+                                        <a id="select_header">Test Scripts</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="card-block collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="list-group">
+                                        <a data-toggle="collapse" href="#collapseOne" class="list-group-item list-group-item-action script_name"> These Boots Are Made For Walking</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" style="margin:20px;">
+                            <div class="row justify-content-center">
+
+                                <!--checkbox-->
+                                <div class="col-sm-* col-md-*">
+                                    <div class="tg-list-item">
+                                        <h4><img id="chrome_img" src="css/chrome_bl.png" alt="chrome" height="50" width="50"></h4>
+                                        <input class="tgl tgl-ios" id="chrome" type="checkbox" />
+                                        <label class="tgl-btn" for="chrome"></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-* col-md-*">
+                                    <div class="tg-list-item">
+                                        <h4><img id="firefox_img" src="css/firefox_bl.png" alt="firefox" height="50" width="50"></h4>
+                                        <input class="tgl tgl-ios" id="firefox" type="checkbox" />
+                                        <label class="tgl-btn" for="firefox"></label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-* col-md-*">
+                                    <div class="tg-list-item">
+                                        <h4><img id="ie_img" src="css/ie_bl.png" alt="chrome" height="50" width="50"></h4>
+                                        <input class="tgl tgl-ios" id="ie" type="checkbox" />
+                                        <label class="tgl-btn" for="ie"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="warning">
+                            <p>Note: At-least one test script and browser is required to add test.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--footer-->
+                <div class="modal-footer">
+                    <button id="Addbtn" type="button" class="btn btn-dark">Add</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container test_container">
+        <div class="row test-row justify-content-start"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
